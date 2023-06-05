@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../Imagenes/pokemonfondo2.jpg');
+    background-size: cover;
+    
+}
+
+
+.container {
+    background-color: #545b7795;
+    border: 3px solid black;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+  }
+
+  .button{
+    margin-top: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #5C8984;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    width: 200px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .button:hover{
+    background-color: #3f5c58;
+  }
+
+  .span{
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 41%;
+    bottom: 133px;
+  }
+
+  .button:hover .span{
+    left: 27%;
+  }
+
+  .icono{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    top: 248px;
+    opacity: 0;
+    transition: .5s ease-in-out all;
+    left: 80px;
+    
+    
+  }
+
+  .button:hover .icono{
+    left: 70%;
+    opacity: 1;
+    
+  }
+  
+  .tittle{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    
+  }
