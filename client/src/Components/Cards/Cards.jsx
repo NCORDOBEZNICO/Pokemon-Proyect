@@ -15,7 +15,7 @@ const Cards = (currentCharacters) => {
 
         return (
             <div className={style.container}>
-                {pokemons.map(pokemon => {                 
+                {pokemons?.map(pokemon => {                 
                     return <Card
                         key={pokemon.id}
                         id={pokemon.id}

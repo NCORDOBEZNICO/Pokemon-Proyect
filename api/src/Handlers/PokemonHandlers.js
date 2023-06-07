@@ -9,11 +9,11 @@ const getPokemonsHandler = async (req, res) => {
     res.status(200).json(resultado)
 }
 
-const getPokemonHandlerId = async (req, res) => {
+const getPokemonsHandlerId = async (req, res) => {
     const { id } = req.params;
     const source = isNaN(id) ? "bdd" : "api";
     try {
-        const pokemon = await getPokemonById(id, source)
+        const pokemon = await obtenerPokemonId(id, source)
         res.status(200).json(pokemon)
     } catch (error) {
         res.status(400).json({ error: error.message })
@@ -23,7 +23,7 @@ const getPokemonHandlerId = async (req, res) => {
 const createPokemonHandler = async (req, res) => {
     try {
         const { name, image, hp, attack, defense, speed, height, weight } = req.body;
-        const newPokemon = await createPokemon(name, image, hp, attack, defense, speed, height, weight);
+        const newPokemon = await crearPokemon(name, image, hp, attack, defense, speed, height, weight);
         res.status(201).json(newPokemon);
     } catch (error) {
         res.status(400).json({ error: error.message })
@@ -32,6 +32,6 @@ const createPokemonHandler = async (req, res) => {
 
 module.exports = {
     getPokemonsHandler,
-    getPokemonHandlerId,
+    getPokemonsHandlerId,
     createPokemonHandler,
 }

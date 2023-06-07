@@ -5,6 +5,7 @@
 
 
 .mainContainer{
+    z-index: 1;
     height: 70px;
     width: 0 auto;
     display: flex;

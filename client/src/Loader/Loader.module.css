@@ -1,0 +1,16 @@
+.containerMain{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 45vb;
+}
+
+.imgLoader{
+    width: 150px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -20px;
+    
+}
