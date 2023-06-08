@@ -2,6 +2,7 @@
 import { GET_POKEMONS, GET_POKEMON, SEARCH_POKEMON_FAILURE, SEARCH_POKEMON_SUCCESS } from "./actions";
 
 const initialState = {
+    allPokemons: [],
     pokemons: [],
     pokemonDetail: [],
     searchedPokemon: null,
@@ -18,6 +19,7 @@ const rootReducer = (state = initialState, action) => {
           return {
             ...state,
             pokemons: action.payload,
+            allPokemons: action.payload,
           };
     
         case GET_POKEMON:

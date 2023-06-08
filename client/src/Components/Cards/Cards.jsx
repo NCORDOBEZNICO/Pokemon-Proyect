@@ -6,13 +6,7 @@ import { useSelector } from "react-redux"
 const Cards = (currentCharacters) => {
 
         const pokemons = useSelector(state => state.pokemons)
-        console.log(pokemons)
-
-
-
-
-
-
+    
         return (
             <div className={style.container}>
                 {pokemons?.map(pokemon => {                 

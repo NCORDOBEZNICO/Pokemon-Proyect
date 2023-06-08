@@ -1,0 +1,30 @@
+.containerMain{
+    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vb;
+    background-color: #416d68;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 10px;
+    height: 50vb;
+    width: 75vb;
+    margin-left: 60vb;
+    padding: 10px;
+}
+
+.title{
+    justify-content: center;
+    display: flex;
+    color: #fff;
+}
+
+.input{
+    width: 50%;
+    
+}
+
+.span{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}

@@ -30,10 +30,12 @@
 .img{
     width: 20vb;
     height: 20vb;
+    margin-bottom: 10px;
 }
 
 .name{
     color: #fff;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 20px;
     display: flex;
@@ -57,4 +59,8 @@
     font-weight: bold;
     color: aquamarine;
     font-size: 15px;
+}
+
+.type{
+    color: #fff;
 }

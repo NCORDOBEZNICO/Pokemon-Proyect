@@ -17,6 +17,7 @@
 
 .containerSecundary{
   display: flex;
+  background-color: #545B77;
   flex-direction: column;
   align-items: center;
   justify-content: center;

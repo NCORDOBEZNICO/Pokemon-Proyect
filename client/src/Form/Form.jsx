@@ -1,4 +1,5 @@
 import { useState } from "react";
+import style from '../Form/Form.module.css'
 
 
 const Form = () => {
@@ -57,17 +58,17 @@ const Form = () => {
 
 
     return (
-        <div>
+        <div className={style.containerMain}>
             <form action="">
-            <h1>CREATE POKEMON</h1>
+            <h1 className={style.title}>CREATE POKEMON</h1>
             <h2>
-                <label>Name:</label>
-                <input type="text" value={form.name} name="name" onChange={changeHandler}   />
-                {errors.name && <span> {errors.name}</span>}
+                <label className={style.label}>Name:</label>
+                <input className={style.input} type="text" value={form.name} name="name" onChange={changeHandler}   />
+                {errors.name && <span className={style.span}> {errors.name}</span>}
             </h2>
             <h2>
                 <label>HP:</label>
-                <input type="number" value={form.hp} name="hp" onChange={changeHandler}  />
+                <input  type="number" value={form.hp} name="hp" onChange={changeHandler}  />
             </h2>
             <h2>
                 <label>Attack:</label>
